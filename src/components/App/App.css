@@ -1,0 +1,43 @@
+
+body {
+    margin: 0;
+}
+
+.app {
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+    list-style: inside;
+}
+
+.coinList-image {
+    width: 50px;
+}
+
+.coinList-item {
+    display: flex;
+}
+
+.coinsummary {
+    border-color: white;
+    border-style: outset;
+}
+
+.coin-data-category {
+    font-size: 10px;
+}
+
+.delete-icon {
+    display: none;
+    position: absolute;
+    right: 6px;
+}
+
+.coin:hover .delete-icon {
+    display: block;
+}
+
