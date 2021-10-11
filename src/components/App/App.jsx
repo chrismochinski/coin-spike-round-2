@@ -8,6 +8,7 @@ import AddCoin from '../AddCoin/AddCoin';
 import Header from '../Header/Header';
 import useStyles from '../useStyles/styles.jsx';
 import './App.css';
+import { WatchListContextProvider } from '../Context/WatchListContext';
 
 
 
@@ -18,29 +19,32 @@ function App() {
 
     return (
         <div className="app">
-            <Router>
 
-                <Header />
+            <WatchListContextProvider>
+                <Router>
 
-                <Button variant="contained" style={{backgroundColor: '#D4A33B', color: 'white'}}>Link</Button>
-              
-              
+                    <Header />
 
-                {/* <Route exact path="/" component={CoinSummaryPage}> */}
-                
-                <Route>
-                    <CoinSummaryPage />
-                </Route>
+                    <Button variant="contained" style={{ backgroundColor: '#D4A33B', color: 'white' }}>Link</Button>
 
 
 
+                    {/* <Route exact path="/" component={CoinSummaryPage}> */}
+
+                    <Route>
+                        <CoinSummaryPage />
+                    </Route>
 
 
-                <Route exact path="/coin-details">
-                    <CoinDetailPage />
-                </Route>
 
-            </Router>
+
+
+                    <Route exact path="/coin-details">
+                        <CoinDetailPage />
+                    </Route>
+
+                </Router>
+            </WatchListContextProvider>
         </div>
     )
 }
