@@ -22,7 +22,7 @@ ul {
     display: flex;
 }
 
-.coinsummary {
+.coinSummary {
     border-color: white;
     border-style: outset;
 }
@@ -43,4 +43,21 @@ ul {
 
 .header {
     padding-bottom: 20px;
+}
+
+.success {
+    color: green;
+}
+
+.danger {
+    color: red;
+}
+
+.coinContainer {
+    border: 1px solid black;
+    padding: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }

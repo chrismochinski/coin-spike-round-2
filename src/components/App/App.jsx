@@ -28,20 +28,14 @@ function App() {
                     <Button variant="contained" style={{ backgroundColor: '#D4A33B', color: 'white' }}>Link</Button>
 
 
-
-                    {/* <Route exact path="/" component={CoinSummaryPage}> */}
-
-                    <Route>
+                    <Route exact path="/">
                         <CoinSummaryPage />
                     </Route>
 
-
-
-
-
-                    <Route exact path="/coin-details">
+                    <Route exact path="/coin/:id">
                         <CoinDetailPage />
                     </Route>
+
 
                 </Router>
             </WatchListContextProvider>

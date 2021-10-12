@@ -8,7 +8,7 @@ function CoinSummaryPage() {
     const classes = useStyles();
 
     return (
-        <div>
+        <div className="coinContainer">
             <AddCoin />
             <CoinList />
         </div>

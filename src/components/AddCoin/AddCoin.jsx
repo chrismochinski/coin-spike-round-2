@@ -6,7 +6,7 @@ import { Typography } from '@material-ui/core'
 const AddCoin = () => {
     return (
         <div>
-            <Typography style={{paddingTop: '10px'}}>Add Coin</Typography>
+            
         </div>
     )
 }
